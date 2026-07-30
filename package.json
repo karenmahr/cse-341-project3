@@ -1,0 +1,31 @@
+{
+  "name": "cse-341-project3",
+  "version": "1.0.0",
+  "description": "My third Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "swagger-autogen": "node swagger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karenmahr/cse-341-project3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/karenmahr/cse-341-project3/issues"
+  },
+  "homepage": "https://github.com/karenmahr/cse-341-project3#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.5.0"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
+  }
+}
