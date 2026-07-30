@@ -1,0 +1,88 @@
+### ----------------------------------------
+### COLECCIÓN 1: MUSIC
+### ----------------------------------------
+
+
+GET http://localhost:3000/music
+
+### GET team by ID
+
+GET http://localhost:3000/music/6a6a87dc965afb9bfde5a12e
+
+### CREATE team
+
+POST http://localhost:3000/music HTTP/1.1
+content-type:application/json
+
+{
+  "_id": "6a6a87dc965afb9bfde5a12e",
+  "album_name": "After Hours",
+  "artist": "The Weeknd",
+  "duration_seconds": 200,
+  "genre": "Synthpop",
+  "release_year": 2019,
+  "title": "Blinding Lights"
+}
+
+### UPDATE team
+
+PUT http://localhost:3000/music/6a6a87dc965afb9bfde5a12e HTTP/1.1
+content-type:application/json
+
+{
+    "album_name": "After Hours",
+    "artist": "The Weeknd",
+    "duration_seconds": 200,
+    "genre": "Synthpop",
+    "release_year": 2019,
+    "title": "Blinding Lights"
+}
+
+### DELETE team
+
+DELETE http://localhost:3000/music/6a6a87cb965afb9bfde5a12d
+
+
+### ----------------------------------------
+### COLECCIÓN 2: ARTISTS
+### ----------------------------------------
+
+GET http://localhost:3000/artists
+
+### GET team by ID
+
+GET http://localhost:3000/artists/6a6aa8c7771bde4eacb4a687
+
+### CREATE team
+
+POST http://localhost:3000/artists HTTP/1.1
+content-type:application/json
+
+{
+  "active_since": 2004,
+  "country": "United States",
+  "genre": "Funk / Pop / R&B",
+  "is_touring": "true",
+  "name": "Bruno Mars",
+  "record_label": "Atlantic Records",
+  "total_albums": 3
+}
+
+### UPDATE team
+
+PUT http://localhost:3000/artists/6a6aabfbf314df443c7a6820 HTTP/1.1
+content-type:application/json
+
+{
+  "active_since": 2004,
+  "country": "United States",
+  "genre": "Funk / Pop / R&B",
+  "is_touring": "true",
+  "name": "Bruno Mars",
+  "record_label": "Atlantic Records",
+  "total_albums": 3
+}
+
+### DELETE team
+
+DELETE http://localhost:3000/artists/6a6aabfbf314df443c7a6820
