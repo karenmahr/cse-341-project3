@@ -5,7 +5,7 @@ const doc = {
         title: "My API",
         description: 'Teams API',
     },
-    host: 'localhost:3000',
+    host: 'https://project3-rmss.onrender.com',
     schemes: ['http', 'https'],
 };
 

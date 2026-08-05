@@ -5,10 +5,12 @@ dns.setServers(['8.8.8.8', '1.1.1.1']);
 
 const express = require('express');
 const mongodb = require('./data/database.js');
-
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cors = require('cors');
 
+
+app.use(cors());
 app.use(express.json());
 app.use('/', require('./routes/index.js'));
 app.get('/', (req, res) => {
