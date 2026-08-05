@@ -5,7 +5,7 @@
     "description": "Teams API",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "project3-rmss.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
