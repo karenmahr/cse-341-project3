@@ -226,22 +226,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "album_name": {
+                "active_since": {
                   "example": "any"
                 },
-                "artist": {
-                  "example": "any"
-                },
-                "duration_seconds": {
+                "country": {
                   "example": "any"
                 },
                 "genre": {
                   "example": "any"
                 },
-                "release_year": {
+                "is_touring": {
                   "example": "any"
                 },
-                "title": {
+                "name": {
+                  "example": "any"
+                },
+                "record_label": {
+                  "example": "any"
+                },
+                "total_albums": {
                   "example": "any"
                 }
               }
@@ -308,22 +311,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "album_name": {
+                "active_since": {
                   "example": "any"
                 },
-                "artist": {
-                  "example": "any"
-                },
-                "duration_seconds": {
+                "country": {
                   "example": "any"
                 },
                 "genre": {
                   "example": "any"
                 },
-                "release_year": {
+                "is_touring": {
                   "example": "any"
                 },
-                "title": {
+                "name": {
+                  "example": "any"
+                },
+                "record_label": {
+                  "example": "any"
+                },
+                "total_albums": {
                   "example": "any"
                 }
               }
