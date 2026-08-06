@@ -8,7 +8,6 @@
   "host": "project3-rmss.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {

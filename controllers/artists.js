@@ -47,12 +47,13 @@ const getSingle = async (req, res) => {
 const createArtist = async (req, res) => {
     //#swagger.tags=['artists']
     const artist = {
-        album_name: req.body.album_name,
-        artist: req.body.artist,
-        duration_seconds: req.body.duration_seconds,
+        active_since: req.body.active_since,
+        country: req.body.country,
         genre: req.body.genre,
-        release_year: req.body.release_year,
-        title: req.body.title
+        is_touring: req.body.is_touring,
+        name: req.body.name,
+        record_label: req.body.record_label,
+        total_albums: req.body.total_albums,
     };
 
     try {
@@ -81,12 +82,13 @@ const updateArtist = async (req, res) => {
     try {
         const artistId = new ObjectId(req.params.id);
         const artist = {
-            album_name: req.body.album_name,
-            artist: req.body.artist,
-            duration_seconds: req.body.duration_seconds,
+            active_since: req.body.active_since,
+            country: req.body.country,
             genre: req.body.genre,
-            release_year: req.body.release_year,
-            title: req.body.title
+            is_touring: req.body.is_touring,
+            name: req.body.name,
+            record_label: req.body.record_label,
+            total_albums: req.body.total_albums,
         };
 
         const response = await mongodb
