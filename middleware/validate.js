@@ -75,7 +75,7 @@ const saveTour_date = (req, res, next) => {
         city: 'required|string',
         country: 'required|string',
         venue: 'required|string',
-        event_date: 'required|integer',
+        event_date: 'required|date',
         is_sold_out: 'required|string',
     };
     validator(req.body, validationRule, {}, (err, status) => {
