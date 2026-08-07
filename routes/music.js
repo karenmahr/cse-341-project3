@@ -1,15 +1,18 @@
 const express = require('express');
 const router = express.Router();
+
 const musicController = require('../controllers/music');
+const validation = require('../middleware/validate');
+const { isAuthenticated } = require('../middleware/authenticate');
 
 router.get('/', musicController.getAll);
 
 router.get('/:id', musicController.getSingle);
-// Crear, actualizar y eliminar
-router.post('/', musicController.createSong);
 
-router.put('/:id', musicController.updateSong);
+router.post('/', isAuthenticated, validation.saveMusic, musicController.createSong);
 
-router.delete('/:id', musicController.deleteSong);
+router.put('/:id', isAuthenticated, validation.saveMusic, musicController.updateSong);
+
+router.delete('/:id', isAuthenticated, musicController.deleteSong);
 
 module.exports = router;
